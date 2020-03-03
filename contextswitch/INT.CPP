@@ -12,7 +12,7 @@
     #define __CPPARGS
 #endif
 
-void interrupt ( *oldhandler)(__CPPARGS);
+void interrupt (*oldhandler)(__CPPARGS);
 
 int count=0;
 

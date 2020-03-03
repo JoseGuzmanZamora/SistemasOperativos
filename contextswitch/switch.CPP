@@ -19,9 +19,10 @@ typedef void (*pcbHandler)();
 int count=0;
 
 struct PCB{
- int quantum;
- int quantumProgress;
-  pcbHandler fn;
+    int state;
+    int quantum;
+    int quantumProgress;
+    pcbHandler fn;
 } ;
 int x,y=0;
 
